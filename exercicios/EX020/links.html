@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+        color: rgb(255, 0, 0);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:visited{
+        color: blue;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: black;
+    }
+
+    a:active{
+        color: rgb(255, 255, 255);
+    } 
+
+    .especial{
+        background-color: rgba(255, 217, 0, 0.567);
+    }
+
+    .especial::before{
+        content:'⇨';
+    }
+
+    .especial::after{
+           content: '⇦';
+    }
+
+    .buck{
+        background-color: rgba(0, 133, 0, 0.745);
+    }
+
+    .buck::before{
+        content: '☆';
+    }
+
+    .buck::after{
+        content: '☆';
+    }
+</style>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.nba.com/news" class="especial">Site do Galo</a></li>
+        <li><a href="https://www.youtube.com/" class="buck">Site Milwauke Bucks</a></li>
+        <li><a href="https://red.rnbastreams.com/">Site Pimbol</a></li>
+    </ul>
+</body>
+</html>
